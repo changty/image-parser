@@ -1,0 +1,25 @@
+{
+  "name": "image-parser",
+  "version": "1.0.0",
+  "description": "Read an image and turn it into 1's and 0's for neural network",
+  "main": "imageparser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify imageparser.js > dist/imageparser.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changty/image-parser.git"
+  },
+  "author": "Einari Kurvinen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/changty/image-parser/issues"
+  },
+  "homepage": "https://github.com/changty/image-parser#readme",
+  "dependencies": {
+    "browserify": "^13.1.1",
+    "canvas-browserify": "^1.1.3",
+    "stackblur-canvas": "^1.4.0"
+  }
+}
