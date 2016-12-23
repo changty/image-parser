@@ -5,7 +5,7 @@
   "main": "imageparser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-js": "browserify imageparser.js > dist/imageparser.js"
+    "build-js": "browserify imageparser.js > dist/imageparser.js --standalone parseImage"
   },
   "repository": {
     "type": "git",
