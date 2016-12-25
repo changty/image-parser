@@ -48,12 +48,15 @@
 
         imageData = thresholder(imageData, options.threshold);
         imageData = extract(imageData, options.chars); // returns an array; 
-
         if(options.debug) {
             updateDebugCanvas(imageData); 
         }
 
         imageData = downscale(imageData, options.downscaledSize); // returns an array
+
+        // if(options.debug) {
+        //     updateDebugCanvas(imageData); 
+        // }
 
         var forBrain = imageData.map(function(imgData) {
             return formatForBrain(imgData) 
@@ -112,6 +115,7 @@
             birghtness = brightness/2;
           }
 
+          console.log("Threshold", brightness);
           return brightness;
         }
 
